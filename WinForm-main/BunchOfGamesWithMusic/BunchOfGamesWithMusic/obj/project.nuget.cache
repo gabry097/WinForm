@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tZDOy885Edh0JTenXOlhmkB9vmG5ZEV15VYUSR5CxihYiDReICeYs0eNjBeug+vcdxWFDpLrbc/Y+Z/MIeNW7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\Desktop\\WinForm-main\\BunchOfGamesWithMusic\\BunchOfGamesWithMusic\\BunchOfGamesWithMusic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
