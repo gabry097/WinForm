@@ -15,10 +15,6 @@ namespace BunchOfGamesWithMusic
 {
     public partial class MainGames : Form
     {
-        private static string nomeDir = @"D:\";
-        private static string nomeFile = "Bck.txt";
-        private static string fullPath = Path.Combine(nomeDir, nomeFile);
-        private FileInfo fi = new FileInfo(fullPath);
         bool jumping = false;
         int jumpSpeed;
         int force = 12;
@@ -73,14 +69,6 @@ namespace BunchOfGamesWithMusic
                         trex.Image = Properties.Resources.dead;
                         txtScore.Text += "clicca R per ricominciare";
                         isGameOver = true;
-                        using (StreamWriter sw = fi.CreateText())
-                        {
-                            if (score!=null)
-                            {
-                                sw.WriteLine(score);
-                            }
-                                    
-                        }
                     }
                 }
             }
