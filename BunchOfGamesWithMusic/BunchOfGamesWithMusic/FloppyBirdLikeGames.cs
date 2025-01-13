@@ -17,10 +17,6 @@ namespace BunchOfGamesWithMusic
 {
     public partial class FloppyBirdLikeGames : Form
     {
-        private static string nomeDir = @"D:\";
-        private static string nomeFile = "BckFlappy.txt";
-        private static string fullPath = Path.Combine(nomeDir, nomeFile);
-        private FileInfo fi = new FileInfo(fullPath);
         int pipeSpeed = 8;
         int gravity = 15;
         int score = 0;
@@ -92,13 +88,6 @@ namespace BunchOfGamesWithMusic
             quit.Visible=true;
             restart.Enabled = true;
             quit.Enabled = true;
-            using (StreamWriter sw = fi.CreateText())
-            {
-                if (score != null)
-                {
-                    sw.WriteLine(score);
-                }
-            }
         }
 
         private void restart_Click(object sender, EventArgs e)
